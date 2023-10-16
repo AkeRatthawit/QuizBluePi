@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231016 11:31:35.203" rpa="false" schemaversion="4">
+<suite id="s1" name="Additem" source="C:\Users\Ake\Robot\Additem.robot">
+<test id="s1-t1" name="เปิด google.co.th ด้วย Chrome" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://abhigyank.github.io/To-Do-List/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231016 11:31:35.583" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<status status="PASS" starttime="20231016 11:31:35.582" endtime="20231016 11:31:39.247"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 11:31:39.248" endtime="20231016 11:31:39.249"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Detail}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231016 11:31:39.251" level="INFO">Typing text 'ทดสอบ' into text field '//*[@id="new-task"]'.</msg>
+<status status="PASS" starttime="20231016 11:31:39.249" endtime="20231016 11:31:40.240"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 11:31:40.242" level="INFO">Clicking button '//*[@id="add-item"]/button'.</msg>
+<status status="PASS" starttime="20231016 11:31:40.241" endtime="20231016 11:31:41.635"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 11:31:41.636" endtime="20231016 11:31:41.637"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${tab}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20231016 11:31:41.637" endtime="20231016 11:31:43.685"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 11:31:43.686" endtime="20231016 11:31:43.686"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${tab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231016 11:31:43.688" level="INFO">Clicking element '//body/div[1]/div[1]/div[1]/a[2]/span[1]'.</msg>
+<status status="PASS" starttime="20231016 11:31:43.687" endtime="20231016 11:31:47.809"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1.0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 11:31:47.810" endtime="20231016 11:31:47.810"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CheckBox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231016 11:31:47.813" level="INFO">Clicking element '//body/div[1]/div[1]/div[3]/ul[1]/li[1]/label[1]/span[4]'.</msg>
+<status status="PASS" starttime="20231016 11:31:47.812" endtime="20231016 11:31:49.900"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 11:31:49.901" endtime="20231016 11:31:49.901"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${tab1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231016 11:31:49.903" level="INFO">Clicking element '//body/div[1]/div[1]/div[1]/a[3]/span[1]'.</msg>
+<status status="PASS" starttime="20231016 11:31:49.902" endtime="20231016 11:31:54.025"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2.0</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231016 11:31:54.025" endtime="20231016 11:31:54.026"/>
+</kw>
+<status status="PASS" starttime="20231016 11:31:35.580" endtime="20231016 11:31:54.026"/>
+</test>
+<status status="PASS" starttime="20231016 11:31:35.205" endtime="20231016 11:31:54.028"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Additem">Additem</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
